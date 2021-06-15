@@ -1,0 +1,18 @@
+.order_container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order_card{
+    margin: 10px;
+}
+
+.order_card .ant-card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}

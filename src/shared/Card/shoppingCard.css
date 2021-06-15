@@ -1,0 +1,16 @@
+.ant-card-head {
+    background-color: #1890ff !important;
+    color: white !important;
+    text-align: center;
+}
+
+.shopping_card {
+    margin: 10px !important;
+    box-shadow: 5px 5px 16px -4px #7A7A7A;
+}
+
+.shopping_card_content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

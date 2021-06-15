@@ -1,0 +1,36 @@
+.cart_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantity {
+    font-weight: bold;
+}
+
+.quantity_selectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.delete_button {
+    margin: auto;
+    display: flex;
+}
+
+.cart_card {
+    padding: 10px;
+}
+
+.cart_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.pay_button {
+    width: 100%;
+}

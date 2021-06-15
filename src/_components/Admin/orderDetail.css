@@ -1,0 +1,6 @@
+.detail_product_card_container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
