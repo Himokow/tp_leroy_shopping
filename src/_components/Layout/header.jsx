@@ -9,7 +9,7 @@ const Header = () => {
         <>
         <div className='header'>
             <Link to='/'>
-            <img className="header_img" alt="a" src='https://lh3.googleusercontent.com/proxy/UzN491CNgvmQrFbKvcfVleD1U-6rkHsVedSq2UOTuh_N_XUfZzM7Dn18S3rP_6M3F2Gwabv5swAmDuPN-jRKQzAH2hv4yI4Xhhy4BN2ggKXySJ49Gr28fbkNrqtxEf_bsNR6wu04tK4'/>
+            <img className="header_img" alt="a" src='https://image.freepik.com/vecteurs-libre/logo-fruits-legumes_7085-159.jpg'/>
             </Link>
             <div>
                 <Button>
