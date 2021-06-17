@@ -13,7 +13,8 @@ const ShoppingCard = ({fruit, addProduct}) => {
         >
             <div className='shopping_card_content'>
                 <p>Prix : {fruit.price} €</p>
-                <Button type='primary' onClick={() => addProduct(fruit)}>Ajouter</Button>
+                <p>Stock : {fruit.stock}</p>
+                <Button type='primary' disabled={fruit.stock <= 0 } onClick={() => addProduct(fruit)}>Ajouter</Button>
             </div>
         </Card>
     )

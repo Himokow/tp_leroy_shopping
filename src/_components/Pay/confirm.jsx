@@ -6,13 +6,21 @@ import {useDispatch, useSelector} from "react-redux";
 import {addOrder} from "../../store/actions/order";
 import {removeUser} from "../../store/actions/user";
 import {resetCart} from "../../store/actions/cart";
+import {updateFruits} from "../../store/actions/fruits";
 
 
 const Confirm = () => {
     const user = useSelector(state => state.user.user)
     const cart = useSelector(state => state.cart.cart)
+    const fruitss = useSelector(state => state.fruits.fruits)
     const dispatch = useDispatch();
     const createOrdrer = () => {
+    const fruits = [...fruitss]
+    cart.forEach(fruit => {
+        const index = fruits.findIndex(f => f.id === fruit.id);
+        fruits[index].stock = fruits[index].stock - fruit.quantity;
+    });
+        dispatch(updateFruits(fruits))
         dispatch(addOrder({products : cart, user: user, date: Date.now()}))
         dispatch(removeUser());
         dispatch(resetCart());
